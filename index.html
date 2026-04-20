@@ -9,28 +9,23 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f7f7f7;
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    padding: 20px;
-    max-width: 600px;
+    padding: 15px;
+    max-width: 500px;
     margin: auto;
     background: #ffffff;
 }
 
+/* HEADLINE */
 h1 {
-    font-size: 28px;
+    font-size: 24px;
     color: #000;
     margin-bottom: 10px;
-}
-
-p {
-    font-size: 18px;
-    color: #444;
-    margin: 10px 0;
 }
 
 .highlight {
@@ -38,35 +33,71 @@ p {
     font-weight: bold;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 16px 30px;
-    background-color: #e60000;
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 6px;
-    font-weight: bold;
-    animation: pulse 1.5s infinite;
+/* TEXTO */
+p {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
 }
 
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-
+/* IMAGEM AJUSTADA */
 img {
     width: 100%;
+    max-height: 380px;
+    object-fit: cover;
     border-radius: 12px;
     margin: 15px 0;
 }
 
+/* BOTÃO */
+.btn {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    padding: 18px;
+    background-color: #e60000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+}
+
+/* ANIMAÇÃO */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+    100% { transform: scale(1); }
+}
+
+/* ALERTA */
+.alert {
+    color: #e60000;
+    font-weight: bold;
+}
+
+/* AVISO FINAL */
 .warning {
-    font-size: 14px;
+    font-size: 13px;
     color: #888;
-    margin-top: 20px;
+    margin-top: 15px;
+}
+
+/* MOBILE EXTRA */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .btn {
+        font-size: 17px;
+        padding: 16px;
+    }
 }
 </style>
 </head>
@@ -77,18 +108,20 @@ img {
 
 <h1>Ela perdeu <span class="highlight">7kg em 21 dias</span> sem academia</h1>
 
+<p><strong>Sem academia. Sem dieta restritiva.</strong></p>
+
 <p>Método simples que mulheres comuns estão usando para <strong>emagrecer rápido em casa</strong>.</p>
 
 <img src="mulher.jpg" alt="Resultado em 21 dias">
 
 <p>Depois de tentar várias dietas sem sucesso, ela encontrou uma forma simples de transformar o corpo em poucos dias.</p>
 
-<p><strong>⚠️ Atenção:</strong> Esse método pode sair do ar a qualquer momento.</p>
+<p class="alert">⚠️ Esse método pode sair do ar a qualquer momento.</p>
 
 <p><strong>Clique abaixo e veja como funciona:</strong></p>
 
 <a href="https://go.hotmart.com/I105463077U" class="btn">
-VER COMO FUNCIONA AGORA
+VER O MÉTODO AGORA
 </a>
 
 <p class="warning">Resultados podem variar de pessoa para pessoa.</p>
