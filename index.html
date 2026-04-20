@@ -9,7 +9,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #f7f7f7;
     margin: 0;
     padding: 0;
 }
@@ -18,32 +18,55 @@ body {
     padding: 20px;
     max-width: 600px;
     margin: auto;
+    background: #ffffff;
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 28px;
     color: #000;
+    margin-bottom: 10px;
 }
 
 p {
     font-size: 18px;
     color: #444;
+    margin: 10px 0;
+}
+
+.highlight {
+    color: #e60000;
+    font-weight: bold;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 15px 25px;
+    margin-top: 25px;
+    padding: 16px 30px;
     background-color: #e60000;
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
+    font-size: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
 img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+.warning {
+    font-size: 14px;
+    color: #888;
+    margin-top: 20px;
 }
 </style>
 </head>
@@ -52,19 +75,23 @@ img {
 
 <div class="container">
 
-<h1>Ela perdeu 7kg em 21 dias sem academia</h1>
+<h1>Ela perdeu <span class="highlight">7kg em 21 dias</span> sem academia</h1>
 
-<p>Método simples que mulheres comuns estão usando para emagrecer rápido em casa.</p>
+<p>Método simples que mulheres comuns estão usando para <strong>emagrecer rápido em casa</strong>.</p>
 
-<img src="mulher.jpg">
+<img src="mulher.jpg" alt="Resultado em 21 dias">
 
 <p>Depois de tentar várias dietas sem sucesso, ela encontrou uma forma simples de transformar o corpo em poucos dias.</p>
+
+<p><strong>⚠️ Atenção:</strong> Esse método pode sair do ar a qualquer momento.</p>
 
 <p><strong>Clique abaixo e veja como funciona:</strong></p>
 
 <a href="https://go.hotmart.com/I105463077U" class="btn">
 VER COMO FUNCIONA AGORA
 </a>
+
+<p class="warning">Resultados podem variar de pessoa para pessoa.</p>
 
 </div>
 
