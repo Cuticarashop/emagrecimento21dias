@@ -13,27 +13,28 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background: linear-gradient(to bottom, #f8f8f8, #eeeeee);
+    background: linear-gradient(to bottom, #f8f8f8, #ececec);
     margin: 0;
     padding: 18px 10px;
     color: #222;
 }
 
 .container {
-    max-width: 500px;
+    max-width: 520px;
     margin: 0 auto;
     background: #ffffff;
-    padding: 18px 16px 22px;
+    padding: 20px 16px 24px;
     border-radius: 14px;
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
 }
 
 /* HEADLINE */
 h1 {
-    font-size: 24px;
+    font-size: 25px;
     color: #111;
     margin: 0 0 8px;
-    line-height: 1.25;
+    line-height: 1.22;
+    font-weight: 700;
 }
 
 .highlight {
@@ -46,7 +47,7 @@ p {
     font-size: 16px;
     color: #444;
     margin: 10px 0;
-    line-height: 1.4;
+    line-height: 1.45;
 }
 
 .top-proof {
@@ -56,12 +57,25 @@ p {
     margin-top: 0;
 }
 
+.subheadline {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
 .human-line {
     font-size: 15px;
     color: #666;
     font-style: italic;
-    margin-top: 8px;
+    margin-top: 10px;
     margin-bottom: 12px;
+}
+
+.social-proof {
+    font-size: 14px;
+    color: #666;
+    margin-top: 2px;
+    margin-bottom: 10px;
 }
 
 /* IMAGEM */
@@ -69,16 +83,16 @@ p {
     background: #f3f3f3;
     border-radius: 14px;
     padding: 6px;
-    margin: 14px 0;
+    margin: 18px 0;
     overflow: hidden;
 }
 
 img {
     display: block;
     width: 100%;
-    max-height: 320px;
+    max-height: 420px;
     object-fit: cover;
-    object-position: center top;
+    object-position: center 20%;
     border-radius: 10px;
 }
 
@@ -86,13 +100,13 @@ img {
 .btn {
     display: block;
     width: 100%;
-    max-width: 320px;
+    max-width: 340px;
     margin: 18px auto 0;
-    padding: 17px 16px;
+    padding: 18px 16px;
     background: #e10600;
     color: #fff;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 20px;
     border-radius: 10px;
     font-weight: bold;
     box-shadow: 0 10px 22px rgba(225, 6, 0, 0.24);
@@ -137,7 +151,7 @@ img {
     }
 
     h1 {
-        font-size: 21px;
+        font-size: 22px;
     }
 
     p {
@@ -145,7 +159,8 @@ img {
     }
 
     .top-proof,
-    .human-line {
+    .human-line,
+    .social-proof {
         font-size: 14px;
     }
 
@@ -156,7 +171,7 @@ img {
     }
 
     img {
-        max-height: 280px;
+        max-height: 360px;
     }
 }
 </style>
@@ -166,17 +181,19 @@ img {
 
 <div class="container">
 
-    <h1>Ela perdeu <span class="highlight">7kg em 21 dias</span> sem academia</h1>
+    <h1>Ela perdeu <span class="highlight">7kg em 21 dias</span>… e sem academia</h1>
 
     <p class="top-proof">Sem academia. Sem dieta restritiva.</p>
 
-    <p>Método simples que mulheres comuns estão usando para <strong>emagrecer rápido em casa</strong>.</p>
+    <p class="subheadline">Método simples que mulheres comuns estão usando para <strong>emagrecer rápido em casa</strong>.</p>
 
     <div class="image-wrap">
         <img src="mulher.jpg" alt="Resultado em 21 dias">
     </div>
 
     <p class="human-line">“Eu não acreditava… até ver a diferença no espelho.”</p>
+
+    <p class="social-proof">Mais de 3.000 mulheres já testaram esse método.</p>
 
     <p>Depois de tentar várias dietas sem sucesso, ela encontrou uma forma simples de transformar o corpo em poucos dias.</p>
 
