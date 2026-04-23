@@ -1,12 +1,213 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste V2</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafio 21 Dias</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #f8f8f8, #ececec);
+    margin: 0;
+    padding: 18px 10px;
+    color: #222;
+}
+
+.container {
+    max-width: 520px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px 16px 24px;
+    border-radius: 14px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADLINE */
+h1 {
+    font-size: 25px;
+    color: #111;
+    margin: 0 0 8px;
+    line-height: 1.22;
+    font-weight: 700;
+}
+
+.highlight {
+    color: #e10600;
+    font-weight: bold;
+}
+
+/* TEXTO */
+p {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+    line-height: 1.45;
+}
+
+.top-proof {
+    font-size: 15px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 0;
+}
+
+.subheadline {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.human-line {
+    font-size: 15px;
+    color: #666;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.social-proof {
+    font-size: 14px;
+    color: #666;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+/* IMAGEM */
+.image-wrap {
+    background: #f3f3f3;
+    border-radius: 14px;
+    padding: 6px;
+    margin: 18px 0;
+    overflow: hidden;
+}
+
+.hero-img {
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 10px;
+}
+
+/* BOTÃO */
+.btn {
+    display: block;
+    width: 100%;
+    max-width: 340px;
+    margin: 18px auto 0;
+    padding: 18px 16px;
+    background: #e10600;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 10px 22px rgba(225, 6, 0, 0.24);
+    animation: pulse 1.5s infinite;
+    transition: background 0.2s ease;
+}
+
+.btn:hover {
+    background: #c80000;
+}
+
+/* ANIMAÇÃO */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+    100% { transform: scale(1); }
+}
+
+/* ALERTA */
+.alert {
+    color: #c80000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* AVISO FINAL */
+.warning {
+    font-size: 12px;
+    color: #888;
+    margin-top: 14px;
+}
+
+/* MOBILE EXTRA */
+@media (max-width: 480px) {
+    body {
+        padding: 10px 6px;
+    }
+
+    .container {
+        padding: 16px 12px 20px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .top-proof,
+    .human-line,
+    .social-proof {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 16px 14px;
+        max-width: 100%;
+    }
+
+    .hero-img {
+        max-height: 360px;
+    }
+}
+</style>
 </head>
+
 <body>
-  <h1>V2 funcionando</h1>
-  <p>Se você está vendo isso, o problema não é o GitHub Pages.</p>
+
+<div class="container">
+
+    <h1>Ela perdeu <span class="highlight">7kg em 21 dias</span>… e sem academia</h1>
+
+    <p class="top-proof">Sem academia. Sem dieta restritiva.</p>
+
+    <p class="subheadline">Método simples que mulheres comuns estão usando para <strong>emagrecer rápido em casa</strong>.</p>
+
+    <div class="image-wrap">
+        <img src="mulher.jpg" alt="Resultado em 21 dias" class="hero-img">
+    </div>
+
+    <p class="human-line">“Eu não acreditava… até ver a diferença no espelho.”</p>
+
+    <p class="social-proof">Mais de 3.000 mulheres já testaram esse método.</p>
+
+    <p>Depois de tentar várias dietas sem sucesso, ela encontrou uma forma simples de transformar o corpo em poucos dias.</p>
+
+    <p class="alert">⚠️ Esse método pode sair do ar a qualquer momento.</p>
+
+    <p><strong>Descubra agora como esse método funciona.</strong></p>
+
+    <a href="https://go.hotmart.com/I105463077U" class="btn">
+        VER O MÉTODO AGORA
+    </a>
+
+    <p class="warning">Resultados podem variar de pessoa para pessoa.</p>
+
+</div>
+
 </body>
 </html>
