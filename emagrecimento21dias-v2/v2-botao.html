@@ -13,14 +13,14 @@ body {
     text-align: center;
     background: linear-gradient(to bottom, #f8f8f8, #ececec);
     margin: 0;
-    padding: 18px 10px;
+    padding: 18px 10px 90px;
     color: #222;
 }
 
 .container {
     max-width: 520px;
     margin: 0 auto;
-    background: #ffffff;
+    background: #fff;
     padding: 20px 16px 28px;
     border-radius: 14px;
     box-shadow: 0 10px 28px rgba(0,0,0,0.08);
@@ -61,37 +61,45 @@ p {
     margin: 18px 0;
 }
 
-.hero-img {
-    width: 100%;
-    max-height: 420px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
+.hero-img,
 .proof-img {
     width: 100%;
     border-radius: 10px;
+    display: block;
+}
+
+.hero-img {
+    max-height: 420px;
+    object-fit: cover;
 }
 
 .expert-img {
     width: 100%;
     max-width: 260px;
     border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.alert {
+    color: #c80000;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .btn {
     display: block;
     width: 100%;
-    max-width: 360px;
-    margin: 28px auto 0;
-    padding: 20px;
+    max-width: 370px;
+    margin: 24px auto 0;
+    padding: 20px 16px;
     background: linear-gradient(180deg, #ff1a1a, #c40000);
     color: #fff;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 20px;
     border-radius: 12px;
     font-weight: bold;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(196,0,0,0.26);
     transition: 0.2s ease;
 }
 
@@ -99,10 +107,35 @@ p {
     transform: scale(1.03);
 }
 
-.alert {
-    color: #c80000;
-    font-weight: bold;
-    font-size: 15px;
+.trust {
+    font-size: 13px;
+    color: #444;
+    margin-top: 12px;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #888;
+    margin-top: 14px;
+}
+
+.sticky-btn {
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: 9999;
+    margin: 0 auto;
+    max-width: 480px;
+    padding: 16px 12px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .sticky-btn {
+        display: none;
+    }
 }
 </style>
 </head>
@@ -115,11 +148,15 @@ p {
 
 <p><strong>Sem academia. Sem dieta restritiva.</strong></p>
 
-<p>Método simples que mulheres comuns estão usando para se sentirem melhor com o próprio corpo.</p>
+<p>Método simples que mulheres comuns estão conhecendo para cuidar melhor da rotina e se sentirem melhor.</p>
 
 <div class="image-wrap">
 <img src="mulher.jpg" alt="Imagem principal" class="hero-img">
 </div>
+
+<a href="https://go.hotmart.com/I105463077U?src=v2botao_top" class="btn">
+QUERO DESBLOQUEAR MEU RESULTADO AGORA
+</a>
 
 <p><i>“Eu não acreditava… até começar a notar a diferença no espelho.”</i></p>
 
@@ -133,7 +170,7 @@ p {
 <img src="antes-depois-home.jpg" alt="Antes e depois homem" class="proof-img">
 </div>
 
-<p class="section-title">Aprovado por especialista em saúde feminina:</p>
+<p class="section-title">Orientação apresentada por especialista:</p>
 
 <div class="image-wrap">
 <img src="especialista.png" alt="Especialista" class="expert-img">
@@ -142,24 +179,28 @@ p {
 <p class="alert">⚠️ Atenção: essa página pode sair do ar ainda hoje.</p>
 
 <p style="font-size:14px; color:#666;">
-Mais de 3.000 mulheres já testaram esse método.
+Mais de 3.000 pessoas já conheceram esse método.
 </p>
 
-<a href="https://go.hotmart.com/I105463077U" class="btn">
+<a href="https://go.hotmart.com/I105463077U?src=v2botao_final" class="btn">
 QUERO DESBLOQUEAR MEU RESULTADO AGORA
 </a>
 
-<p style="font-size:13px; color:#444; margin-top:12px;">
+<p class="trust">
 ✔ Acesso imediato<br>
 ✔ Método simples para começar hoje<br>
-✔ Sem academia
+✔ Resultados podem variar de pessoa para pessoa
 </p>
 
-<p style="font-size:12px; color:#888; margin-top:14px;">
-Resultados podem variar de pessoa para pessoa.
+<p class="disclaimer">
+Este conteúdo é informativo. Para mudanças de saúde, procure orientação profissional.
 </p>
 
 </div>
+
+<a href="https://go.hotmart.com/I105463077U?src=v2botao_sticky" class="btn sticky-btn">
+QUERO VER COMO FUNCIONA
+</a>
 
 </body>
 </html>
