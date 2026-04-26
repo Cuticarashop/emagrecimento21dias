@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,57 +7,145 @@
 <title>Descubra Como Funciona</title>
 
 <style>
+* { box-sizing: border-box; }
+
 body {
-    font-family: Arial;
-    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f8f8f8, #ececec);
     text-align: center;
     margin: 0;
+    padding: 14px 10px 95px;
+    color: #222;
 }
 
 .container {
+    width: 100%;
     max-width: 520px;
-    margin: auto;
+    margin: 0 auto;
     background: #fff;
-    padding: 20px;
-    border-radius: 12px;
+    padding: 20px 16px 28px;
+    border-radius: 14px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 25px;
+    line-height: 1.25;
+    margin: 0 0 10px;
 }
 
 .highlight {
-    color: red;
+    color: #e10600;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.45;
+    color: #444;
+    margin: 10px 0;
+}
+
+.section-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #222;
+    margin: 18px 0 10px;
+}
+
+.image-wrap {
+    background: #f3f3f3;
+    border-radius: 14px;
+    padding: 6px;
+    margin: 18px 0;
 }
 
 img {
     width: 100%;
     border-radius: 10px;
+    display: block;
+}
+
+.hero-img {
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.expert-img {
+    max-width: 260px;
+    margin: 0 auto;
 }
 
 .btn {
     display: block;
-    margin: 20px auto;
-    padding: 18px;
-    background: red;
+    width: 100%;
+    max-width: 370px;
+    margin: 22px auto;
+    padding: 18px 14px;
+    background: linear-gradient(180deg, #ff1a1a, #c40000);
     color: #fff;
-    font-size: 18px;
-    border-radius: 8px;
+    font-size: 19px;
+    line-height: 1.15;
+    border-radius: 12px;
     text-decoration: none;
     font-weight: bold;
+    box-shadow: 0 8px 20px rgba(196,0,0,0.24);
 }
 
-/* BOTÃO FIXO */
+.alert {
+    color: #c80000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.trust {
+    font-size: 13px;
+    color: #444;
+    margin-top: 10px;
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #888;
+    margin-top: 14px;
+}
+
+/* botão fixo seguro no mobile */
 .fixed-btn {
     position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: red;
-    color: white;
-    padding: 16px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: 9999;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 15px 12px;
+    background: linear-gradient(180deg, #ff1a1a, #c40000);
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.15;
+    border-radius: 12px;
+    text-decoration: none;
     font-weight: bold;
-    text-align: center;
-    font-size: 18px;
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.22);
+}
+
+/* no desktop some com botão fixo */
+@media (min-width: 768px) {
+    .fixed-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 17px;
+        padding: 16px 12px;
+    }
 }
 </style>
 </head>
@@ -70,43 +159,64 @@ Ela começou a fazer isso em casa e se
 <span class="highlight">surpreendeu com a diferença</span>
 </h1>
 
-<p><b>Sem academia. Sem dieta restritiva.</b></p>
+<p><strong>Sem academia. Sem dieta restritiva.</strong></p>
 
-<img src="mulher.jpg">
+<p>Método simples que mulheres comuns estão conhecendo para se sentirem melhor com o próprio corpo.</p>
 
-<!-- BOTÃO 1 -->
-<a href="https://go.hotmart.com/I105463077U?src=top" class="btn">
+<div class="image-wrap">
+<img src="mulher.jpg" alt="Imagem principal" class="hero-img">
+</div>
+
+<a href="https://go.hotmart.com/I105463077U?src=v2botao_top" class="btn">
 QUERO VER COMO FUNCIONA
 </a>
 
-<p><i>“Eu não acreditava…”</i></p>
+<p><i>“Eu não acreditava… até começar a notar a diferença no espelho.”</i></p>
 
-<h3>Veja alguns exemplos reais:</h3>
+<p class="section-title">Veja alguns exemplos reais:</p>
 
-<img src="antes-depois-mulher.jpg">
-<img src="antes-depois-home.jpg">
+<div class="image-wrap">
+<img src="antes-depois-mulher.jpg" alt="Antes e depois mulher">
+</div>
 
-<!-- BOTÃO 2 -->
-<a href="https://go.hotmart.com/I105463077U?src=meio" class="btn">
+<div class="image-wrap">
+<img src="antes-depois-home.jpg" alt="Antes e depois homem">
+</div>
+
+<a href="https://go.hotmart.com/I105463077U?src=v2botao_meio" class="btn">
 VER RESULTADOS AGORA
 </a>
 
-<h3>Aprovado por especialista:</h3>
+<p class="section-title">Orientação apresentada por especialista:</p>
 
-<img src="especialista.png">
+<div class="image-wrap">
+<img src="especialista.png" alt="Especialista" class="expert-img">
+</div>
 
-<p style="color:red;">⚠️ Essa página pode sair do ar hoje.</p>
+<p class="alert">⚠️ Atenção: essa página pode sair do ar ainda hoje.</p>
 
-<!-- BOTÃO 3 -->
-<a href="https://go.hotmart.com/I105463077U?src=final" class="btn">
+<p style="font-size:14px; color:#666;">
+Mais de 3.000 pessoas já conheceram esse método.
+</p>
+
+<a href="https://go.hotmart.com/I105463077U?src=v2botao_final" class="btn">
 QUERO DESBLOQUEAR MEU RESULTADO
 </a>
 
+<p class="trust">
+✔ Acesso imediato<br>
+✔ Método simples para começar hoje<br>
+✔ Resultados podem variar de pessoa para pessoa
+</p>
+
+<p class="disclaimer">
+Este conteúdo é informativo. Para mudanças de saúde, procure orientação profissional.
+</p>
+
 </div>
 
-<!-- BOTÃO FIXO -->
-<a href="https://go.hotmart.com/I105463077U?src=fixed" class="fixed-btn">
-CLIQUE AQUI PARA VER
+<a href="https://go.hotmart.com/I105463077U?src=v2botao_sticky" class="fixed-btn">
+QUERO VER COMO FUNCIONA
 </a>
 
 </body>
